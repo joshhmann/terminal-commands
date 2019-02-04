@@ -11,9 +11,9 @@ module.exports.ls  = () => {
 
 module.exports.touch = () => {
   console.log("Creating a new file");
-  fs.writefile('message.txt', '', (err) => {
+  fs.writeFile('./message.txt', '', (err) => {
     if (err) throw err;
-    console.log(success);
+    console.log('success');
   });
 };
 
@@ -21,8 +21,8 @@ module.exports.touch = () => {
 module.exports.mkdir = () => {
   //code
   console.log("Creating a new directory");
-  fs.mkdir('./', (err) => {
+  fs.mkdir('./newfolder', (err) => {
     if (err) throw err;
-    console.log(scucess);
+    console.log('success');
   });
 };
